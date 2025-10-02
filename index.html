@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Blog — Home</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",sans-serif;margin:0;background:#f6f7fb;color:#111}
+    .container{max-width:900px;margin:30px auto;padding:0 16px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    header h1{margin:0;font-size:1.6rem}
+    .new-post{background:#1a73e8;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+    .post{background:#fff;border-radius:8px;padding:18px;margin:18px 0;box-shadow:0 6px 20px rgba(20,30,50,0.06)}
+    .post h2{margin:0 0 8px}
+    .meta{font-size:.85rem;color:#666;margin-bottom:10px}
+    .excerpt{color:#333;line-height:1.5}
+    nav.sidebar{position:fixed;right:16px;top:80px;width:220px}
+    @media(max-width:900px){nav.sidebar{position:static;width:auto;margin-top:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Blog</h1>
+      <a class="new-post" href="#">Naya Post</a>
+    </header>
+
+    <main>
+      <article class="post">
+        <h2>Example Post Title</h2>
+        <div class="meta">By Ahmed • 1 October 2025 • Category: Technology</div>
+        <p class="excerpt">Yeh ek chhota sa excerpt hai jo post ka maqsad batata hai. Read more link se full post dekhein.</p>
+      </article>
+
+      <article class="post">
+        <h2>Aur Ek Post</h2>
+        <div class="meta">By Sara • 28 September 2025 • Category: Travel</div>
+        <p class="excerpt">Short summary yahan likhi jaaye gi. Is template ko aage CMS se jorna asaan hai.</p>
+      </article>
+    </main>
+
+    <nav class="sidebar" aria-label="Sidebar">
+      <section>
+        <h4>Categories</h4>
+        <ul>
+          <li>Technology</li>
+          <li>Travel</li>
+          <li>Food</li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+</body>
+</html>
